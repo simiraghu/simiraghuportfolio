@@ -58,25 +58,29 @@ const RightSection = styled(motion.div)`
   flex: 1;
   text-align: center;
   position: relative;
-  margin-top: 25vh;
-  
+  margin-top: 25vh; /* Default for smaller screens */
+
   img {
-    width: 250px; /* Adjusted size */
-    height: 250px; /* Adjusted size */
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    @media (min-width: 768px) {
+      width: 300px;
+      height: 300px;
+    }
   }
 
   img:hover {
     transform: scale(1.1); /* Scale effect */
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 1.3);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3); /* Adjusted shadow for smoothness */
   }
 
   @media (min-width: 768px) {
-    width: 300px;
-    height: 300px;
+    margin-top: 10vh; /* Adjust margin-top for larger screens */
   }
 `;
 
