@@ -40,6 +40,7 @@ const EducationCard = styled(motion.div)`
   border-radius: 15px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   padding: 1.5rem;
+  margin: 1rem;
   margin-top: 5rem;
   width: 300px;
   text-align: center;
